@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tasty Treats</title>
     
-    <script type="module" crossorigin src="/project-food1728/assets/categories-b314eda7.js"></script>
-    <link rel="stylesheet" href="/project-food1728/assets/index-3fc3836f.css">
+    <script type="module" crossorigin src="/project-food1728/assets/categories-0cb63804.js"></script>
+    <link rel="stylesheet" href="/project-food1728/assets/index-9c0ffee0.css">
   </head>
   <body>
     <header>
@@ -23,7 +23,48 @@
   <div class="categories-filter"></div>
 </section>
       <!-- search -->
-      
+      <form class="search-filters">
+    <label>
+        Search
+        <input type="text" id="search-key" name="search-key" placeholder="Enter text">
+    </label>
+
+    <label>
+        Time
+        <div class="custom-select">
+            <select name="time-key" id="time-key">
+                <option value="10">10 min</option>
+                <option value="20">20 min</option>
+                <option value="30">30 min</option>
+                <option value="40">40 min</option>
+            </select>
+        </div>
+        
+    </label>
+
+    <label>
+        Area
+        <div class="custom-select">
+            <select name="area-key" id="area-key">
+            </select>
+        </div>
+        
+    </label>
+
+    
+
+    <label>
+        Ingredients
+        <div class="custom-select">
+            <select name="ingredients-key" id="ingredients-key"></select>
+
+        </div>
+    </label>
+
+    <p class="filter-reset">   
+        Reset the filter
+    </p>
+</form>
       <!-- recipes -->
       
       <!-- popular recipes -->
