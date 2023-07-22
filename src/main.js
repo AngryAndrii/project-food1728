@@ -1,8 +1,6 @@
 // приклад підключення
 // import './js/swiper';
 
-import './js/tasty-treatsAPI';
-
 import './js/header';
 import './js/hero';
 import './js/favorites';
