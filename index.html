@@ -7,8 +7,8 @@
     <title>Tasty Treats</title>
     <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet"/>
     
-    <script type="module" crossorigin src="/project-food1728/assets/search-cb23ce4f.js"></script>
-    <link rel="stylesheet" href="/project-food1728/assets/search-ae52ba23.css">
+    <script type="module" crossorigin src="/project-food1728/assets/recipe-modal-f6ad4e02.js"></script>
+    <link rel="stylesheet" href="/project-food1728/assets/recipe-modal-cf5c67e4.css">
   </head>
   <body>
     <header>
@@ -231,6 +231,57 @@
     <!--------------------- modal windows -------------------------->
     <!-- recipe modal -->
     
+<button type="button" class="recipe-btn">See recipe</button>
+<section class="backdrop-modal-see visually-hiddennn" data-modal-reciepe>
+  
+  <div class="modal_reciepe" id="modal">
+    <button
+      type="button"
+      class="modal__close"
+      data-modal-close
+    ><svg class="modal-close-img" width="20" height="20">
+      <use href="../images/sprite.svg#icon-modal-close"></use>
+    </svg></button>
+    <div class="main-info">
+      <div class="media" id="media"></div>
+      <div>
+        <h2 class="name-reciepe" id="name-reciepe"></h2>
+        <div class="rating-time">
+          <div class="rating-wrap">
+            <p class="rating"></p>
+            <svg class="icon-star" width="18" height="18">
+              <use href="../images/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="icon-star" width="18" height="18">
+              <use href="../images/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="icon-star" width="18" height="18">
+              <use href="../images/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="icon-star" width="18" height="18">
+              <use href="../images/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="icon-star" width="18" height="18">
+              <use href="../images/sprite.svg#icon-star"></use>
+            </svg>
+          </div>
+          <p class="modal-time"></p>
+        </div>
+        <ul class="ingredients" id="modal-ingredients"></ul>
+      </div>
+    </div>
+    <ul class="tags" id="tags"></ul>
+    <p class="instructions" id="instructions"></p>
+    <div class="modal-btn">
+      <button type="button" class="btn-favorite" id="add-favorite">
+        Add to favorite
+      </button>
+      <!-- <button type="button" class="rating-btn" id="rate" rating-modal-open>
+        Give a rating
+      </button> -->
+    </div>
+  </div>
+</section>
     <!-- rating modal -->
     
     <!-- order-now modal -->
