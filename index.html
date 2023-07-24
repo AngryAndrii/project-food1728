@@ -5,9 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/project-food1728/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tasty Treats</title>
+    <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet"/>
     
-    <script type="module" crossorigin src="/project-food1728/assets/order-now-modal-e4aacd6d.js"></script>
-    <link rel="stylesheet" href="/project-food1728/assets/index-f9c49173.css">
+    <script type="module" crossorigin src="/project-food1728/assets/order-now-modal-1331f900.js"></script>
+    <link rel="stylesheet" href="/project-food1728/assets/index-96ea5993.css">
   </head>
   <body>
     <header>
@@ -126,50 +127,56 @@
   <div class="categories-filter"></div>
 </section>
       <!-- search -->
-      <form class="search-filters">
-    <label>
+      
+
+<form class="search-filters">
+   <label class="search-label">
         Search
-        <input type="text" id="search-key" name="search-key" placeholder="Enter text">
+        <svg class="icon-search">
+            <use href='../images/sprite.svg#icon-search'></use>
+        </svg>
+        <input type="text" id="search-key" name="search-key" placeholder="Enter text" >
     </label>
 
-    <label>
+    
+
+    <label class="time-label">
         Time
-        <div class="custom-select">
             <select name="time-key" id="time-key">
+                <option data-placeholder="true"></option>
+
                 <option value="10">10 min</option>
                 <option value="20">20 min</option>
                 <option value="30">30 min</option>
                 <option value="40">40 min</option>
             </select>
-        </div>
         
     </label>
 
-    <label>
+   <label class="area-label">
         Area
-        <div class="custom-select">
-            <select name="area-key" id="area-key">
+            <select name="area-key" id="area-key" >
+                <option data-placeholder="true"></option>
             </select>
-        </div>
         
     </label>
 
     
 
-    <label>
+    <label class="ingredients-label">
         Ingredients
-        <div class="custom-select">
-            <select name="ingredients-key" id="ingredients-key"></select>
-
-        </div>
+            <select name="ingredients-key" id="ingredients-key" >
+                <option data-placeholder="true"></option>
+            </select>
     </label>
 
     <p class="filter-reset">
-        <svg>
+        <svg class="reset-icon">
             <use href="../images/sprite.svg#icon-search-close"></use>
         </svg>   
         Reset the filter
     </p>
+    
 </form>
       <!-- recipes -->
       <div class="recipes-block"></div>
