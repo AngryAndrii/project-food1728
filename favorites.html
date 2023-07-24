@@ -4,16 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Favorites</title>
-    <script type="module" crossorigin src="/project-food1728/assets/recipes-2ac800d2.js"></script>
+    
+    <script type="module" crossorigin src="/project-food1728/assets/recipes-ad71dfa6.js"></script>
+    <link rel="stylesheet" href="/project-food1728/assets/recipes-a27c5d92.css">
   </head>
-
   <body>
     <header></header>
     <main>
-      <section>
-        <a href="./index.html">Go to home</a>
-        <h1>Welcome to page Favorites</h1>
-      </section>
+      <!-- Favorites -->
+      <section class="favorites-hero container">
+  <picture class="favorites-hero-img">
+    <source
+      srcset="/project-food1728/assets/desktop-favorites-1x-b077b625.jpg 1x, /project-food1728/assets/desktop-favorites-2x-256359c8.jpg 2x"
+      media="(min-width:1200px)"
+    />
+    <source
+      srcset="/project-food1728/assets/tablet-favorites-1x-58f0e937.jpg 1x, /project-food1728/assets/tablet-favorites-2x-d41fab98.jpg 2x"
+      media="(min-width:768px)"
+    />
+    <source
+      srcset="/project-food1728/assets/mobile-favorites-1x-6d9a9c0a.jpg 1x, /project-food1728/assets/mobile-favorites-2x-7fe7012c.jpg 2x"
+      media="(min-width:375px)"
+    />
+    <source
+      srcset="/project-food1728/assets/mobile-favorites-1x-6d9a9c0a.jpg 1x, /project-food1728/assets/mobile-favorites-2x-7fe7012c.jpg 2x"
+      media="(max-width:374px)"
+    />
+    <img
+      class="favorites-hero-img"
+      src="/project-food1728/assets/mobile-favorites-1x-6d9a9c0a.jpg"
+      alt="card-favorites"
+    />
+  </picture>
+</section>
+<section>
+  <div class="container">
+    <h2 class="visually-hidden">Favorites</h2>
+
+    <div class="favorites-categories">
+      <button class="favorites-btn is-active" name="main-cat-btn">
+        All categories
+      </button>
+    </div>
+
+    <ul class="favorites-list"></ul>
+    <div id="pagination" class="tui-pagination"></div>
+
+    <div class="favorites-error is-hidden">
+      <svg class="favorites-error-icon" width="68" height="58">
+        <use href="/project-food1728/assets/sprite-a63dba17.svg#icon-chefs-hat"></use>
+      </svg>
+      <p class="favorites-error-text">
+        It appears that you haven't added any recipes to your favorites yet. To
+        get started, you can add recipes that you like to your favorites for
+        easier access in the future.
+      </p>
+    </div>
+  </div>
+</section>
+
     </main>
     
   </body>
