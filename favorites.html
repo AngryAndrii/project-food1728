@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Favorites</title>
     
-    <script type="module" crossorigin src="/project-food1728/assets/favorites-d9eef765.js"></script>
-    <link rel="modulepreload" crossorigin href="/project-food1728/assets/btn-scrollup-fd3d5107.js">
+    <script type="module" crossorigin src="/project-food1728/assets/favorites-77888e47.js"></script>
+    <link rel="modulepreload" crossorigin href="/project-food1728/assets/btn-scrollup-243a0a13.js">
     <link rel="stylesheet" href="/project-food1728/assets/btn-scrollup-9ced0478.css">
   </head>
   <body>
@@ -127,12 +127,6 @@
   <div class="container">
     <h2 class="visually-hidden">Favorites</h2>
 
-    <div class="favorites-categories"></div>
-
-    <div class="favorites-list"></div>
-    
-    <div id="pagination" class="tui-pagination visually-hidden"></div>
-
     <div class="favorites-error visually-hidden">
       <svg class="favorites-error-icon" width="68" height="58">
         <use href="/project-food1728/assets/sprite-27867edf.svg#icon-chefs-hat"></use>
@@ -143,6 +137,16 @@
         easier access in the future.
       </p>
     </div>
+
+    <div class="favorites-categories">
+      <button class="favorites-btn fav-btn is-active" name="main-cat-btn">
+        All categories
+      </button>
+    </div>
+
+    <div class="favorites-list"></div>
+
+    <div id="pagination" class="tui-pagination visually-hidden"></div>
   </div>
 </section>
 
