@@ -1,4 +1,4 @@
-import"./btn-scrollup-d81b965d.js";const r=document.querySelector(".favorites-list"),a=document.querySelector(".favorites-error"),n=document.querySelector(".favorites-categories"),o=document.querySelector(".favorites-hero"),i=JSON.parse(localStorage.getItem("favorites"));function c(){const t=i.map(e=>`<button class="favorites-btn fav-btn is-active" name="main-cat-btn">
+import"./btn-scrollup-89bc2045.js";const r=document.querySelector(".favorites-list"),a=document.querySelector(".favorites-error"),n=document.querySelector(".favorites-categories"),o=document.querySelector(".favorites-hero"),i=JSON.parse(localStorage.getItem("favorites"));function c(){const t=i.map(e=>`<button class="favorites-btn fav-btn is-active" name="main-cat-btn">
                      All categories
               </button>
               <button class="favorites-btn btn-categori is-active"
