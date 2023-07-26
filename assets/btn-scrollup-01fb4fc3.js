@@ -2,7 +2,7 @@ var Ug=Object.defineProperty;var Gg=(r,t,i)=>t in r?Ug(r,t,{enumerable:!0,config
     <article id="${t._id}" class="recipe" style="background-image: linear-gradient(1deg, rgba(5, 5, 5, 0.60) 0%, rgba(5, 5, 5, 0.00) 100%), url(${t.thumb})">
       <button class="recipe-heart-btn favorite-heard-btn">
         <svg class="recipe-heart-icon favorite-heard-icon" width="22" height="22">
-          <use href="images/sprite.svg#icon-heart"></use>
+          <use href="/project-food1728/assets/sprite-27867edf.svg#icon-heart"></use>
         <svg>
       </button>
       <div class="recipe-info">
@@ -14,27 +14,27 @@ var Ug=Object.defineProperty;var Gg=(r,t,i)=>t in r?Ug(r,t,{enumerable:!0,config
             <ul class="recipe-rating-stars">
               <li class="recipe-rating-star-item">
                 <svg class="${Li(t.rating,1)}" width="14" height="14">
-                  <use href="images/sprite.svg#icon-star"></use>
+                  <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
                 </svg>
               </li>
               <li class="recipe-rating-star-item">
                 <svg class="${Li(t.rating,2)}" width="14" height="14">
-                  <use href="images/sprite.svg#icon-star"></use>
+                  <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
                 </svg>
               </li>
               <li class="recipe-rating-star-item">
                 <svg class="${Li(t.rating,3)}" width="14" height="14">
-                  <use href="images/sprite.svg#icon-star"></use>
+                  <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
                 </svg>
               </li>
               <li class="recipe-rating-star-item">
                 <svg class="${Li(t.rating,4)}" width="14" height="14">
-                  <use href="images/sprite.svg#icon-star"></use>
+                  <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
                 </svg>
               </li>
               <li class="recipe-rating-star-item">
                 <svg class="${Li(t.rating,5)}" width="14" height="14">
-                  <use href="images/sprite.svg#icon-star"></use>
+                  <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
                 </svg>
               </li>
             </ul>
