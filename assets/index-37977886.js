@@ -37,22 +37,22 @@ Notiflix needs to be appended to the "<`+w+'>" element, but you called it before
               </li>
               <li class="recipe-rating-star-item">
                 <svg class="${di(n.rating,2)}" width="14" height="14">
-                  <use href="./images/sprite.svg#icon-star"></use>
+                  <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
                 </svg>
               </li>
               <li class="recipe-rating-star-item">
                 <svg class="${di(n.rating,3)}" width="14" height="14">
-                  <use href="./images/sprite.svg#icon-star"></use>
+                  <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
                 </svg>
               </li>
               <li class="recipe-rating-star-item">
                 <svg class="${di(n.rating,4)}" width="14" height="14">
-                  <use href="./images/sprite.svg#icon-star"></use>
+                  <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
                 </svg>
               </li>
               <li class="recipe-rating-star-item">
                 <svg class="${di(n.rating,5)}" width="14" height="14">
-                  <use href="./images/sprite.svg#icon-star"></use>
+                  <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
                 </svg>
               </li>
             </ul>
