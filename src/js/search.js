@@ -127,18 +127,22 @@ searchSelectEl.addEventListener('input', _.debounce((e) => {
 }, 300, {leading : false, trailing : true}))
 
 areaSelectElement.addEventListener('change', () => {
-    recipesReq();
-    pagination.movePageTo(1);
+    recipesReq().then(() => {
+      pagination.movePageTo(1);
+    })
+    
 })
 
 ingredientsSelectElement.addEventListener('change', () => {
-    recipesReq();
-    pagination.movePageTo(1);
+    recipesReq().then(() => {
+      pagination.movePageTo(1);
+    })
 })
 
 timeSelectEl.addEventListener('change', () => {
-    recipesReq()
-    pagination.movePageTo(1);
+    recipesReq().then(() => {
+      pagination.movePageTo(1);
+    })
 })
 
 
