@@ -32,7 +32,7 @@ Notiflix needs to be appended to the "<`+w+'>" element, but you called it before
             <ul class="recipe-rating-stars">
               <li class="recipe-rating-star-item">
                 <svg class="${di(n.rating,1)}" width="14" height="14">
-                  <use href="./images/sprite.svg#icon-star"></use>
+                  <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
                 </svg>
               </li>
               <li class="recipe-rating-star-item">
