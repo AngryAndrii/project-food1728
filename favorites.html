@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Favorites</title>
     
-    <script type="module" crossorigin src="/project-food1728/assets/favorites-df71a492.js"></script>
-    <link rel="modulepreload" crossorigin href="/project-food1728/assets/btn-scrollup-026f4f6f.js">
-    <link rel="stylesheet" href="/project-food1728/assets/btn-scrollup-6855434a.css">
+    <script type="module" crossorigin src="/project-food1728/assets/favorites-06ce7171.js"></script>
+    <link rel="modulepreload" crossorigin href="/project-food1728/assets/order-now-modal-6892cfe0.js">
+    <link rel="stylesheet" href="/project-food1728/assets/order-now-modal-6855434a.css">
   </head>
   <body>
     <header>
@@ -157,10 +157,128 @@
   </div>
 </section>
 
+      <div class="backdrop-order">
+  <div id="modal-order" class="modal-order">
+    <button type="button" class="order-modal-close-btn">
+      <svg class="order-icon-close" width="20" height="20">
+        <use href="/project-food1728/assets/sprite-27867edf.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <div class="wrap-recipe">
+      <form action="#" class="modal-form-order" autocomplete="on">
+        <strong class="contact-modal-title">Order now</strong>
+
+        <span class="contact-field-wrapper">
+          <label class="input-box">
+            <input
+              type="text"
+              class="input-field input-field-name input-js"
+              name="name"
+              required
+              pattern="[A-Za-z]{1,32}"
+              placeholder="Anton"
+            />
+            <span class="order-input-label">Name</span>
+          </label>
+
+          <label class="input-box">
+            <input
+              type="tel"
+              class="input-field input-field-tel input-js"
+              name="tel"
+              required
+              pattern="\+[0-9]{12}"
+              placeholder="+388888888888"
+            />
+            <span class="order-input-label">Phone number</span>
+          </label>
+
+          <label class="input-box">
+            <input
+              type="email"
+              class="input-field input-field-tel input-js"
+              name="email"
+              required
+              pattern="[^@\s]+@[^@\s]+"
+              placeholder="youremail@gmail.com"
+            />
+            <span class="order-input-label">Email</span>
+          </label>
+          <label class="input-box">
+            <textarea
+              class="input-field input-field-textarea input-js"
+              name="comment"
+              rows="4"
+            ></textarea>
+            <span class="order-input-label">Comment</span>
+          </label>
+        </span>
+
+        <button type="submit" class="order-btn" data-modal="2">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+      <section class="backdrop-see-recipe visually-hidden" data-modal-recipe>
+  <div class="modal_recipe">
+  <button
+    type="button"
+    class="modal__close"
+    data-modal-close
+  ><svg class="modal-close-img" width="20" height="20">
+    <use href="/project-food1728/assets/sprite-27867edf.svg#icon-modal-close"></use>
+  </svg></button>
+  <div class="main-info">
+    <div class="media-tablet">
+    <div class="media" id="media"></div>
+    <h2 class="name-recipe" id="name-recipe"></h2>
+    </div>
+    <div class="rating-time">
+        <div class="rating-wrap">
+          <p class="rating"></p>
+          <svg class="icon-star" width="18" height="18">
+            <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
+          </svg>
+          <svg class="icon-star" width="18" height="18">
+            <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
+          </svg>
+          <svg class="icon-star" width="18" height="18">
+            <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
+          </svg>
+          <svg class="icon-star" width="18" height="18">
+            <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
+          </svg>
+          <svg class="icon-star" width="18" height="18">
+            <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
+          </svg>
+        </div>
+        <p class="modal-time"></p>
+    </div>
+    <ul class="ingredients" id="modal-ingredients"></ul>
+  </div>
+  <ul class="tags" id="tags"></ul>
+  <p class="instructions" id="instructions"></p>
+  <div class="modal-btn">
+    <button type="button" class="btn-favorite btn" id="add-favorite">
+      Add to favorite
+    </button> 
+    <!-- <button type="button" class="rating-btn" id="rate" rating-modal-open>
+      Give a rating
+    </button> -->
+  </div>
+</div>
+</section>
+
+
+
+
+
     </main>
     
     
     
-    <!-- <script type="module" src="./js/order-now-modal.js"></script> -->
+    
+    <!-- <script type="module" src="./js/recipe-modal.js.js"></script> -->
   </body>
 </html>
