@@ -1,7 +1,7 @@
-import{o as c,f as l}from"./order-now-modal-63bba39f.js";const n=document.querySelector(".favorites-list"),r=document.querySelector(".favorites-error"),a=document.querySelector(".favorites-categories"),o=document.querySelector(".favorites-hero");document.querySelector(".nav-link-home").classList.remove("current");document.querySelector(".nav-link-fav").classList.add("current");n.addEventListener("click",c);const i=JSON.parse(localStorage.getItem("favorites"));i===null&&(r.classList.remove("visually-hidden"),a.classList.add("visually-hidden"),o.classList.add("visually-hidden"));function d(){const t=i.map(e=>`<button class="favorites-btn btn-categori is-active"
+import{o as c,f as l}from"./order-now-modal-6525ca6e.js";const o=document.querySelector(".favorites-list"),r=document.querySelector(".favorites-error"),n=document.querySelector(".favorites-categories"),a=document.querySelector(".favorites-hero");document.querySelector(".nav-link-home").classList.remove("current");document.querySelector(".nav-link-fav").classList.add("current");o.addEventListener("click",c);const i=JSON.parse(localStorage.getItem("favorites"));i===null&&(r.classList.remove("visually-hidden"),n.classList.add("visually-hidden"),a.classList.add("visually-hidden"),window.innerWidth>768&&a.classList.remove("visually-hidden"));function d(){const t=i.map(e=>`<button class="favorites-btn btn-categori is-active"
                   type="button">${e.category}
               </button>
-                `).join("");a.insertAdjacentHTML("beforeend",t)}d();function u(t){return(t.toFixed(1)-Number.parseInt(t.toFixed(1))).toFixed(1)===0 .toFixed(1)?Math.round(t):t.toFixed(1)}function s(t,e){return Math.round(t)>=e?"filled-star-icon":"no-filled-star-icon"}function g(){const t=i.map(e=>`
+                `).join("");n.insertAdjacentHTML("beforeend",t)}d();function u(t){return(t.toFixed(1)-Number.parseInt(t.toFixed(1))).toFixed(1)===0 .toFixed(1)?Math.round(t):t.toFixed(1)}function s(t,e){return Math.round(t)>=e?"filled-star-icon":"no-filled-star-icon"}function g(){const t=i.map(e=>`
     <article id="${e._id}" class="recipe recipe-favorites" style="background-image: linear-gradient(1deg, rgba(5, 5, 5, 0.60) 0%, rgba(5, 5, 5, 0.00) 100%), url(${e.thumb})">
       <button class="recipe-heart-btn favorite-heard-btn">
         <svg class="recipe-heart-icon" width="22" height="22">
@@ -46,4 +46,4 @@ import{o as c,f as l}from"./order-now-modal-63bba39f.js";const n=document.queryS
         </div>
       </div>
     </article>
-    `).join(" ");if(n.insertAdjacentHTML("beforeend",t),!i||i.length===0){r.classList.remove("visually-hidden"),a.classList.add("visually-hidden"),window.innerWidth<768&&(o.classList.add("visually-hidden"),r.classList.add("favorites-error-js"));return}l()}g();
+    `).join(" ");if(o.insertAdjacentHTML("beforeend",t),!i||i.length===0){r.classList.remove("visually-hidden"),n.classList.add("visually-hidden"),window.innerWidth<768&&(a.classList.add("visually-hidden"),r.classList.add("favorites-error-js"));return}l()}g();
