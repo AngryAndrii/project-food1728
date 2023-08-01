@@ -3,6 +3,8 @@ import {
   fillingHeartThatWasAddedToFavorites,
 } from './local-storage';
 
+import svg from '../images/sprite.svg';
+
 const listFavorites = document.querySelector('.favorites-list');
 const favoritesMessError = document.querySelector('.favorites-error');
 const categoriesFavorites = document.querySelector('.favorites-categories');
@@ -71,7 +73,7 @@ function renderCardsFavorites() {
       })">
       <button class="recipe-heart-btn favorite-heard-btn">
         <svg class="recipe-heart-icon" width="22" height="22">
-          <use href="/project-food1728/assets/sprite-27867edf.svg#icon-heart"></use>
+          <use href="${svg}#icon-heart"></use>
         <svg>
       </button>
       <div class="recipe-info">
@@ -88,7 +90,7 @@ function renderCardsFavorites() {
                   recipe.rating,
                   1
                 )}" width="14" height="14">
-                  <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
+                  <use href="${svg}#icon-star"></use>
                 </svg>
               </li>
               <li class="recipe-rating-star-item">
@@ -96,7 +98,7 @@ function renderCardsFavorites() {
                   recipe.rating,
                   2
                 )}" width="14" height="14">
-                  <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
+                  <use href="${svg}#icon-star"></use>
                 </svg>
               </li>
               <li class="recipe-rating-star-item">
@@ -104,7 +106,7 @@ function renderCardsFavorites() {
                   recipe.rating,
                   3
                 )}" width="14" height="14">
-                  <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
+                  <use href="${svg}#icon-star"></use>
                 </svg>
               </li>
               <li class="recipe-rating-star-item">
@@ -112,7 +114,7 @@ function renderCardsFavorites() {
                   recipe.rating,
                   4
                 )}" width="14" height="14">
-                  <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
+                  <use href="${svg}#icon-star"></use>
                 </svg>
               </li>
               <li class="recipe-rating-star-item">
@@ -120,7 +122,7 @@ function renderCardsFavorites() {
                   recipe.rating,
                   5
                 )}" width="14" height="14">
-                  <use href="/project-food1728/assets/sprite-27867edf.svg#icon-star"></use>
+                  <use href="${svg}#icon-star"></use>
                 </svg>
               </li>
             </ul>
